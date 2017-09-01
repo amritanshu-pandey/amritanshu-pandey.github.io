@@ -103,7 +103,8 @@ You should get the default nginx page as the output.
     <p><em>Thank you for using nginx.</em></p>
     </body>
     </html>
-    ```
+    
+
 ### Step Four: Setup NGINX reverse proxy to access our different web applications
 
 Now we will configure the NGINX reverse proxy to catch the incoming requests to the web server through different URLs and pass on the request to the correct web application.
@@ -153,9 +154,10 @@ location / {
         proxy_set_header Host $host;
         proxy_cache_bypass $http_upgrade;
     }
-</pre>
+
 This block could be modified as following to listen on a domain sub path instead for e.g. <code>www.example.com/test</code>
-    <pre>
+    
+<pre>
 location <strong>/test</strong> {
         proxy_pass <strong>http://localhost:8080</strong>;
         proxy_http_version 1.1;
@@ -220,6 +222,7 @@ To check the status of the nginx server:
 sudo systemctl status nginx
 ```
 Now all the web applications should be reachable through the different URLs as specified in the following table:
+
 | Application | Port | Domain | Remarks |
 | -------------- | ----- | ---------- | --- |
 | Application1 | 5000 | www.testapp.com | First web application |
