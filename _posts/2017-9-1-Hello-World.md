@@ -15,10 +15,10 @@ We have three web applications hosted on a Linux machine. For this example, NGIN
 Our example web applications are listening on different ports on the same web server. We want to associate different domain names/URLs with these applications. The localhost ports and the external domain names are mentioned in the table below:
 
 | Application | Port | Domain | Remarks |
-| -------------- | ----- | ---------- | ---|
-| Application1 | 5000 | www.testapp.com | First web application
-| Application2 | 5010 | www.testapp.com/reward | Another web application in a sub folder
-| Application3 | 5020 | blog.testapp.com | Third webapp on a different domain|
+| -------------- | ----- | ---------- | --- |
+| Application1 | 5000 | www.testapp.com | First web application |
+| Application2 | 5010 | www.testapp.com/reward | Another web application in a sub folder |
+| Application3 | 5020 | blog.testapp.com | Third webapp on a different domain |
 
 Now we will see how to achieve this kind of setup for our web applications:
 
@@ -66,6 +66,7 @@ Steps for configuring firewalls will be different for each operating system and 
     #For HTTPS
     sudo ufw allow 443
     ```
+
 ### Step Three: Check that NGINX web server is working fine
 Execute the following command to check that the web server is working fine: `curl localhost`
 
