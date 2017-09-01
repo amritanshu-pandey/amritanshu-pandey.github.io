@@ -221,10 +221,10 @@ sudo systemctl status nginx
 ```
 Now all the web applications should be reachable through the different URLs as specified in the following table:
 | Application | Port | Domain | Remarks |
-| -------------- | ----- | ---------- | ---|
-| Application1 | 5000 | www.testapp.com | First web application
-| Application2 | 5010 | www.testapp.com/reward | Another web application in a sub folder
-| Application3 | 5020 | blog.testapp.com | Third webapp on a different domain|
+| -------------- | ----- | ---------- | --- |
+| Application1 | 5000 | www.testapp.com | First web application |
+| Application2 | 5010 | www.testapp.com/reward | Another web application in a sub folder |
+| Application3 | 5020 | blog.testapp.com | Third webapp on a different domain |
 
 Configuration of HTTPS will be covered in a separate blog post. URL of the post will be updated here once that post is available.
 

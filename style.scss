@@ -7,6 +7,7 @@
 
 @import "reset";
 @import "variables";
+@import "bootstrap";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -284,18 +285,19 @@ footer {
 }
 
 table{
-  border-collapse: collapse;
-  border-spacing: 3;
-  border:2px solid #333333;
+  // border-collapse: separate;
+  // border-spacing: 3;
+  // border:2px solid #333333;
+  @extend .table;
 }
 
-th{
-  border:2px solid #333333;
-}
+// th{
+//   border:2px solid #333333;
+// }
 
-td{
-  border:1px solid #333333;
-}
+// td{
+//   border:1px solid #333333;
+// }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
