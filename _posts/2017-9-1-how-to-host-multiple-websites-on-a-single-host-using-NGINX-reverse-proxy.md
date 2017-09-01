@@ -2,6 +2,7 @@
 layout: post
 title: How to host multiple websites on a single server using NGINX reverse proxy
 ---
+
 In this tutorial we will see how to host more than one web application on a single server, either on multiple domains or on domain sub folders.
 
 ## Objective
