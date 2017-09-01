@@ -36,6 +36,7 @@ First we will update the local package and then we will install NGINX using the 
 $ sudo apt update
 $ sudo apt install nginx
 ```
+
 ### Step Two: Configure the firewall
 Next we will open the firewall for the required ports so that our web applications are reachable from the outer world.
 Since we are using NGINX as the reverse proxy, we will only need to open port 80 (HTTP) or port 443 (HTTPS). NGINX will redirect the traffic to the correct port for the different web applications. 
@@ -71,37 +72,37 @@ Steps for configuring firewalls will be different for each operating system and 
 Execute the following command to check that the web server is working fine: `curl localhost`
 
 You should get the default nginx page as the output. 
-```
-# Command - 
-curl localhost
+    ```
+    # Command - 
+    curl localhost
 
-# Output - 
-<!DOCTYPE html>
-<html>
-<head>
-<title>Welcome to nginx!</title>
-<style>
-    body {
-        width: 35em;
-        margin: 0 auto;
-        font-family: Tahoma, Verdana, Arial, sans-serif;
-    }
-</style>
-</head>
-<body>
-<h1>Welcome to nginx!</h1>
-<p>If you see this page, the nginx web server is successfully installed and
-working. Further configuration is required.</p>
+    # Output - 
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Welcome to nginx!</title>
+    <style>
+        body {
+            width: 35em;
+            margin: 0 auto;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+        }
+    </style>
+    </head>
+    <body>
+    <h1>Welcome to nginx!</h1>
+    <p>If you see this page, the nginx web server is successfully installed and
+    working. Further configuration is required.</p>
 
-<p>For online documentation and support please refer to
-<a href="http://nginx.org/">nginx.org</a>.<br/>
-Commercial support is available at
-<a href="http://nginx.com/">nginx.com</a>.</p>
+    <p>For online documentation and support please refer to
+    <a href="http://nginx.org/">nginx.org</a>.<br/>
+    Commercial support is available at
+    <a href="http://nginx.com/">nginx.com</a>.</p>
 
-<p><em>Thank you for using nginx.</em></p>
-</body>
-</html>
-```
+    <p><em>Thank you for using nginx.</em></p>
+    </body>
+    </html>
+    ```
 ### Step Four: Setup NGINX reverse proxy to access our different web applications
 
 Now we will configure the NGINX reverse proxy to catch the incoming requests to the web server through different URLs and pass on the request to the correct web application.
