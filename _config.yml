@@ -77,7 +77,7 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
-theme: jekyll-theme-time-machine
+theme: jekyll-theme-merlot
 
 # Exclude these files from your production _site
 exclude:
