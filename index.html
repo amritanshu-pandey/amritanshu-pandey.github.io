@@ -12,7 +12,16 @@ layout: default
         {{ post.excerpt }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <div class = 'row'>
+        <div class='col-md-2'>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        </div>
+        <div class='col-md-10'>
+            <div class='col-md-6 date'>
+                Written on {{ post.date | date: "%B %e, %Y" }}
+            </div>  
+          </div>
+      </div>
     </article>
   {% endfor %}
 </div>
